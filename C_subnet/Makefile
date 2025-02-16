@@ -1,4 +1,4 @@
-all: partie1 partie2 partie3 partie4 partie5
+all: partie1 partie2 partie3 partie4 partie5 partie6
 
 partie1: partie1.c 
 	gcc -o partie1 partie1.c 
@@ -36,5 +36,9 @@ test5:
 	cat test5_2.txt | ./partie5
 	cat test5_3.txt | ./partie5
 	cat test5_4.txt | ./partie5
+
+partie6: partie6.c 
+	gcc -o partie6 partie6.c
+	
 clean:
-	rm -f partie1 partie2 partie3 partie4 partie5
+	rm -f partie1 partie2 partie3 partie4 partie5 partie6
